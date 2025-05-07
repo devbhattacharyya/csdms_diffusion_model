@@ -31,7 +31,7 @@ C[x > Lx/2] = C_right
 plot_profile(x,C)
 
 nt = 5000
-dt = calculate_stable_time_step(dx,D
+dt = calculate_stable_time_step(dx,D)
 
 for t in range(0,nt):
     C[1:-1] += D * dt / dx ** 2 * (C[:-2] - 2*C[1:-1] + C[2:])
